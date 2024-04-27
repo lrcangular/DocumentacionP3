@@ -2,7 +2,7 @@ package gestion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class PepeGotera {
 
 	public static void main(String[] args) {
 
