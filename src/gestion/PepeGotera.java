@@ -1,3 +1,4 @@
+package gestion;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,9 +8,9 @@ public class PepeGotera {
 
 		List<Baldosa> catalogo = new ArrayList<>();
 		List<Presupuesto> pedidos = new ArrayList<>();
-		final String[] MENU = { "Salir", "Alta baldosa", "Baja baldosa", "Modificación baldosas", "Listado de baldosas",
-				"Crea presupuesto", "Añade baldosa a presupuesto", "Lista presupuestos" };
-		final String[] FIGURA = { "Salir", "Triángulo", "Cuadrado", "Hexágono" };
+		final String[] MENU = { "Salir", "Alta baldosa", "Baja baldosa", "Modificaciï¿½n baldosas", "Listado de baldosas",
+				"Crea presupuesto", "Aï¿½ade baldosa a presupuesto", "Lista presupuestos" };
+		final String[] FIGURA = { "Salir", "Triï¿½ngulo", "Cuadrado", "Hexï¿½gono" };
 		int opcion = -1, pos;
 		String cliente;
 		double superficie;
@@ -38,19 +39,19 @@ public class PepeGotera {
 					p = new Presupuesto(cliente, superficie);
 					pedidos.add(p);
 				} catch (ObjetoErroneo e) {
-					System.out.println("Datos erróneos para elaborar un presupuesto");
+					System.out.println("Datos errï¿½neos para elaborar un presupuesto");
 				}
 				break;
 			case 6:
-				pos = seleccionaPre(pedidos, " a añadir baldosas");
+				pos = seleccionaPre(pedidos, " a aï¿½adir baldosas");
 				p = pedidos.get(pos);
 				System.out.println(p);
-				pos = selecciona(catalogo, " a añadir");
+				pos = selecciona(catalogo, " a aï¿½adir");
 				b = catalogo.get(pos);
 				if(p.anadeOfertas(b)) {
-					System.out.println("Baldosa añadida correctamente");
+					System.out.println("Baldosa aï¿½adida correctamente");
 				} else {
-					System.out.println("No se puede añadir la baldosa");
+					System.out.println("No se puede aï¿½adir la baldosa");
 				}
 				break;
 			case 7:

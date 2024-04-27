@@ -1,3 +1,4 @@
+package gestion;
 import java.util.Scanner;
 import java.util.regex.PatternSyntaxException;
 
@@ -37,7 +38,7 @@ public class Leer {
 			}
 		} catch (PatternSyntaxException e) {
 			// TODO Auto-generated catch block
-			System.out.println(regex + " No es una expresión regular");
+			System.out.println(regex + " No es una expresiï¿½n regular");
 			return null;
 		}
 		return valor;
@@ -81,7 +82,7 @@ public class Leer {
 		}
 		System.out.println("0.-" + menu[0]);
 		while (opcion < 0 || opcion >= menu.length) {
-			opcion = entero("Elije opción");
+			opcion = entero("Elije opciï¿½n");
 		}
 		return opcion;
 	}

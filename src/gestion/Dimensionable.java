@@ -1,3 +1,4 @@
+package gestion;
 
 public interface Dimensionable {
 	public default Double superficie() {

@@ -1,3 +1,4 @@
+package gestion;
 
 public class ObjetoErroneo extends Exception {
 

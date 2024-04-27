@@ -1,3 +1,4 @@
+package gestion;
 
 public abstract class Figura implements Dimensionable {
 	private Double lado;

@@ -1,3 +1,4 @@
+package gestion;
 
 public class Baldosa implements Cloneable {
 	private String modelo;
@@ -96,7 +97,7 @@ public class Baldosa implements Cloneable {
 		try {
 			nueva = new Baldosa(this.modelo, this.forma, this.color, this.precio);
 		} catch (ObjetoErroneo e) {
-			// Como la baldosa existe la clonará y este error no se dará
+			// Como la baldosa existe la clonarï¿½ y este error no se darï¿½
 			System.out.println("Error imposible al clonar");
 		}
 		return nueva;

@@ -1,3 +1,4 @@
+package gestion;
 
 public class Triangulo extends Figura implements Dimensionable {
 
@@ -19,7 +20,7 @@ public class Triangulo extends Figura implements Dimensionable {
 
 	@Override
 	public String toString() {
-		return "Triángulo " + super.toString();
+		return "Triï¿½ngulo " + super.toString();
 	}
 
 }

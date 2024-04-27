@@ -1,3 +1,4 @@
+package gestion;
 
 public class Cuadrado extends Figura implements Dimensionable{
 

@@ -1,3 +1,4 @@
+package gestion;
 
 public class Hexagono extends Figura implements Dimensionable {
 
@@ -19,7 +20,7 @@ public class Hexagono extends Figura implements Dimensionable {
 
 	@Override
 	public String toString() {
-		return "Hexágono " + super.toString();
+		return "Hexï¿½gono " + super.toString();
 	}
 
 }

@@ -1,3 +1,4 @@
+package gestion;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,7 +80,7 @@ public class Presupuesto {
 		int nbal;
 		for (Baldosa baldosa : ofertas) {
 			nbal = (int) (Math.round((Math.round(superficie / baldosa.getForma().superficie() + 0.5)) * 1.03 + 0.5));
-			texto += "\n\t" + baldosa.toString() + "\n\t Número de baldosas: " + nbal + " Precio total "
+			texto += "\n\t" + baldosa.toString() + "\n\t Nï¿½mero de baldosas: " + nbal + " Precio total "
 					+ String.format(" %7.2f", nbal * baldosa.getPrecio());
 		}
 		return "Presupuesto  cliente=" + cliente + ", superficie a alicatar =" + superficie + "\n ofertas:" + texto;
